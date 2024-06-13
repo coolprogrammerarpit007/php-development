@@ -180,7 +180,7 @@
         // var_dump($product); // product of these two values will be store as float as one of these value is a floating point value.
         // echo PHP_INT_MAX;  prints the maximum possible value of integer in php
 
-        $newNumber = 789;
+        // $newNumber = 789;
 
         // echo is_finite($newNumber); // checks if a number is finite number or not
         // is_infinite checks if value is infinite or not.
@@ -191,17 +191,62 @@
         // is_numeric() can be used to check whether a value is numeric value or numeric string. return either true or false.
 
         // php casting -> casting different types into Array
-        $a = 5;       // Integer
-        $b = 5.34;    // Float
-        $c = "hello"; // String
-        $d = true;    // Boolean
-        $e = NULL;    // NULL
+        // $a = 5;       // Integer
+        // $b = 5.34;    // Float
+        // $c = "hello"; // String
+        // $d = true;    // Boolean
+        // $e = NULL;    // NULL
 
-        var_dump((array)$a); 
-        var_dump((array)$b); 
-        var_dump((array)$c); 
-        var_dump((array)$d); 
-        var_dump((array)$e); 
+        // var_dump((array)$a); 
+        // var_dump((array)$b); 
+        // var_dump((array)$c); 
+        // var_dump((array)$d); 
+        // var_dump((array)$e); 
+
+        // to convert data values into objecet we have to use (object) function.
+        // To cast to null we have to use the unset() method.
+
+
+        // Math functions in php
+        // echo (rand(10,100)); // to get random number b/w 10 and 100
+
+        // Declaring a constant variable in php
+        // define("Greeting","Nice to Meet you all"); // declaring a constant variable in php
+        // echo Greeting; // Greeting a constant variable has global scope from start.
+
+        // creating constant variable using the const keyword
+
+        // const MYCAR = 'Mercedes Benz';
+        // echo MYCAR; constatnt variables define using const can not be created inside a local scope.
+        // constant are automatically global scoped and can be used anywhere throughout the script.
+
+        // function test(){
+        //     echo MYCAR;
+        // }
+
+        // test();
+
+        // Magic Constants in php
+        // PHP has nine predefined constants that change value depending on where they are used, and therefor they are called "magic constants".
+        // These magic constants are written with a double underscore at the start and the end, except for the ClassName::class constant.
+
+        // class FRUITS{
+        //     public function myValue(){
+        //         return __CLASS__;
+        //     }
+        // }
+
+        // $kiwi = new FRUITS();
+        // echo $kiwi -> myValue(); // if used inside a class then class name is returned.
+        // echo __DIR__ . "<br>";  // returns the Directory path n
+        // echo __FILE__; // returns the file path name
+
+        // concatenation assignment
+        $text1 = 'Hello ';
+        $text2 = 'Nice to meet you everyone';
+
+        // echo $text1 .= $text2; // Appending one string to another 
+
 
     ?>
 </body>
