@@ -140,12 +140,68 @@
         // echo trim($greeting);// removes extra whitespace
 
         // explode() splits the string at seperator
-
         // var_dump(explode(" ",$greeting));// "splits string and converts into array at space"
 
 
+        // string concatenation in php
+        // to concatenate a string . operator is used
+
+        // $x = 'Hello';
+        // $y = 'world';
+
+        // echo $x.$y; concatenation without the space
+        // echo $x . " " . $y; // concating two strings with space between them
 
 
+        // Now better way to concatenating two string is using white space between double quotes.
+        // echo "$x $y , I am coding in php";
+
+        // php slicing strings
+
+        // $x = 'Namastey JavaScript';
+        // echo substr($x,9); // slicing out JavaScript from "Namastey JavaScript" string.
+
+        // the last character has index -1 index.
+
+        // Escape characters in string in php
+
+        // echo "We are the so called \"Vikings\"  from the north."; // escape sequence in PHP
+
+        // In Php, There are theree main number types
+        // 1. Integer
+        // 2. Float
+        // 3. Number String
+
+        // Also PHP, has two more data types for numbers
+        // Infinity
+        // NaN
+
+        // $product = 2.5 * 4;
+        // var_dump($product); // product of these two values will be store as float as one of these value is a floating point value.
+        // echo PHP_INT_MAX;  prints the maximum possible value of integer in php
+
+        $newNumber = 789;
+
+        // echo is_finite($newNumber); // checks if a number is finite number or not
+        // is_infinite checks if value is infinite or not.
+
+        // check is a number value is NaN or not.
+
+        // echo is_nan($newNumber); // will return 1 if NaN value or return 0 if not a NaN value.
+        // is_numeric() can be used to check whether a value is numeric value or numeric string. return either true or false.
+
+        // php casting -> casting different types into Array
+        $a = 5;       // Integer
+        $b = 5.34;    // Float
+        $c = "hello"; // String
+        $d = true;    // Boolean
+        $e = NULL;    // NULL
+
+        var_dump((array)$a); 
+        var_dump((array)$b); 
+        var_dump((array)$c); 
+        var_dump((array)$d); 
+        var_dump((array)$e); 
 
     ?>
 </body>
