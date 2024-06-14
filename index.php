@@ -242,12 +242,159 @@
         // echo __FILE__; // returns the file path name
 
         // concatenation assignment
-        $text1 = 'Hello ';
-        $text2 = 'Nice to meet you everyone';
+        // $text1 = 'Hello ';
+        // $text2 = 'Nice to meet you everyone';
 
-        // echo $text1 .= $text2; // Appending one string to another 
+        // // echo $text1 .= $text2; // Appending one string to another 
+        // if(5 <> '5'){
+        //     echo 'Not Equal';
+        // }
+
+        // Output have a good day if output time is less than 20 else return good night
+
+        // $t = date('H');
+        // echo $t . "<br>";
+        // if($t < 20){
+        //     echo 'Have a good day';
+        // }
+        // else{
+        //     echo 'Good Night!';
+        // }
+
+        // ternary operator in the php
+
+        // $a = 37;
+
+        // $result = $a > 30 ? true : false;
+        // echo $result;
+
+        // switch statment in php
+
+        // $favcolor = 'red';
+
+        // switch($favcolor){
+        //     case 'red':
+        //         echo 'Your favourite color is: Red ';
+        //         break;
+        //     case 'blue':
+        //         echo 'Your favourite color is: Blue ';
+        //         break;
+        //     case 'green':
+        //         echo 'Your favourite color is: Green ';
+        //         break;
+        //     case 'yellow':
+        //         echo 'Your favourite color is: Yellow ';
+        //         break;
+        //     default:
+        //         echo "You are a colorless person!";
+        // }
+
+        // Itteration in php
+        // while loop in php
+
+        $index = 1;
+
+        // while($index < 7){
+        //     echo $index . "<br>";
+        //     $index++;
+        // }
+
+        // using break statment in while loop
+        // while($index < 7){
+        //     echo "Index: " . $index . "<br>";
+        //     if($index === 4){
+        //         echo "Break At " . $index . "<br>";
+        //         break;
+        //     }
+        //     $index++;
+        // }
+
+        // Itterating through the foreach loop
+
+        // $colors = array('gold','silver','violet','greeen','lavender');
+
+        // foreach($colors as $color){
+        //     echo $color . "<br>";
+        // }
 
 
+        // Associative rrays are different, associative arrays use named keys that you assign to them, and when looping through associative arrays, you might want to keep the key as well as the value.
+
+        // $friends = array("peter" => 35,"James" => 37, "Remus" => 38, "Sirius" => 40);
+
+        // foreach($friends as $friend => $age){
+        //     echo "$friend : $age <br>";
+        // }
+
+        // $colors = array("red", "green", "blue", "yellow");
+
+        // foreach ($colors as $x) {
+        // if ($x == "blue") $x = "pink";
+        // }
+
+        // var_dump($colors);
+
+        // any changes done using loop will not be reflected back in array but by using the & character, the array item is assigned by reference.
+
+        // passing reference of a value to the function.
+
+        // function myFunction(&$value){
+        //     $value += 5;
+        // }
+
+        // $num = 2;
+        // myFunction($num);
+        // echo($num);// reference of number is passed to function so changes also hapens here.
+
+        // function totalNumbers(...$nums){
+        //     $total = 0;
+        //     foreach($nums as $num){
+        //         $total += $num;
+        //     }
+
+        //     return $total;
+        // }
+
+        // $result = totalNumbers(7,8,9,10,11,12,13,14,15);
+        // echo $result;
+
+        // function myFamily($lastName, ...$firstName){
+        //     $len = count($firstName); // to count the length of array
+
+        //     for($i = 0; $i < $len;$i++){
+        //         echo "Hello, $firstName[$i] $lastName " . "<br>";
+        //     }
+        // }
+
+        // myFamily('Doe','John','Ron','Harry');
+
+        // Arrays in php -> Arrays are use to stroe mulltile items into one variable.
+
+        // In PHP, there are three types of Array
+        // 1. Indexed Arrays
+        // 2. Associative Arrays
+        // 3. Multidimensional Arrays
+
+        // $myCars = array('Volvo','Rolce Royace','Tesla');
+        // array_push($myCars,'Tata Nano');
+        // var_dump($myCars);
+
+        // creating a associative array
+        
+        // $futureCar = array('brand' => 'Ford', 'Modal' => 'Mustang', 'year' => 1974, 'Name' => 'arpit');
+        // echo $futureCar['Modal'] . '<br>';
+        // foreach($futureCar as $car => $value){
+        //     echo "$car : $value " . "<br>";
+        // }
+        
+
+        $newFutureCars = [
+            "brand" => "Ford",
+            "Modal" => "Mustang",
+            "year" => 1973
+        ];
     ?>
+
+
 </body>
 </html>
